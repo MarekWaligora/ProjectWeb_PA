@@ -1,0 +1,19 @@
+{
+    //ustawienia kompilatora Sass
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/css"
+        },
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%", // mniej niz 1% na rynku przegladarka
+        "last 2 versions" //wspiera do 2 wersji, mozna oznaczyc wiecej 
+    ]
+}

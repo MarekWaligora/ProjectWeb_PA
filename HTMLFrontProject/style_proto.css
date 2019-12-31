@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0px;
+}
+
+.layout {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+/* ================ start left part sec ========================== */
+.layout #left-part-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    /* border: 1px solid black; */
+    width: 250px;
+    color: blue;
+    background-color: pink;
+    z-index: 1000
+}
+
+.layout #left-part-navigation .logo {
+    background: blueviolet;
+    padding: 20px 10px;
+}
+
+.layout #left-part-navigation ul li {
+    list-style: none;
+}
+
+.layout #left-part-navigation .social-media ul li {
+    display: inline;
+}
+
+/* ================ end left part sec ========================== */
+
+.layout #right-part-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 280px;
+}
+
+.layout #right-part-section .about {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./background-main.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* vertical-align: center; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* .layout #right-part-section .about img,
+h3 {} */
