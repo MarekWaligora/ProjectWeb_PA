@@ -15,5 +15,6 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%", // mniej niz 1% na rynku przegladarka
         "last 2 versions" //wspiera do 2 wersji, mozna oznaczyc wiecej 
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

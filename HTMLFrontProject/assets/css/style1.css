@@ -479,8 +479,8 @@ html,
 body {
   margin: 0px;
   padding: 0;
-  font-family: "Open Sans";
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 12px;
 }
 
 .layout {
@@ -490,7 +490,7 @@ body {
 }
 
 .layout .left-part-section {
-  width: 300px;
+  width: 240px;
   position: fixed;
   z-index: 1000;
 }
@@ -505,9 +505,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
-  color: white;
+  color: green;
   font-family: Montserrat;
-  position: relative;
 }
 
 .layout .left-part-section .left-part-section-container .left-part-section-logo {
@@ -538,70 +537,44 @@ body {
 .layout .left-part-section .left-part-section-container .left-part-section-menu ul {
   padding-bottom: 100px;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .layout .left-part-section .left-part-section-container .left-part-section-menu ul li {
   margin: 20px 0;
-  text-transform: uppercase;
 }
 
-.layout .left-part-section .left-part-section-container .left-part-section-menu ul li a {
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-  position: relative;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-menu ul li a::before {
-  content: ' ';
-  position: absolute;
-  display: block;
-  width: 0%;
-  height: 2px;
-  background: #ff7b00;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  bottom: 50%;
-  margin-left: 120%;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-menu ul li a:hover::before {
-  width: 40px;
-  overflow: hidden;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-menu ul li a:hover {
-  color: #E3872D;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-social {
-  position: absolute;
-  bottom: 10px;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-social ul {
-  list-style: none;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-social ul li {
-  display: inline-block;
-  margin: 0px 15px 0px 0px;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-social ul li a {
-  color: white;
-}
-
-.layout .left-part-section .left-part-section-container .left-part-section-social ul li a:hover {
+.layout .left-part-section .left-part-section-container .left-part-section-menu ul li:hover {
   color: #E3872D;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
 }
 
-.layout .left-part-section .left-part-section-container .expand-collapse .expand {
+.layout .left-part-section .left-part-section-social {
+  position: absolute;
+  bottom: 10px;
+}
+
+.layout .left-part-section .left-part-section-social ul {
+  list-style: none;
+}
+
+.layout .left-part-section .left-part-section-social ul li {
+  display: inline-block;
+  margin: 0px 15px 0px 0px;
+}
+
+.layout .left-part-section .left-part-section-social ul li a {
+  color: white;
+}
+
+.layout .left-part-section .left-part-section-social ul li a:hover {
+  color: #E3872D;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.layout .left-part-section .expand-collapse .expand {
   position: absolute;
   bottom: 15%;
   background-color: #E3872D;
@@ -611,10 +584,10 @@ body {
   display: none;
 }
 
-.layout .left-part-section .left-part-section-container .expand-collapse .collapse {
+.layout .left-part-section .expand-collapse .collapse {
   position: absolute;
   bottom: 15%;
-  left: 280px;
+  left: 220px;
   background-color: #E3872D;
   width: 20px;
   text-align: center;
@@ -631,7 +604,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  padding-left: 300px;
+  padding-left: 240px;
 }
 
 .right-part-section-container .basic-main-container {
@@ -668,43 +641,11 @@ body {
 
 .right-part-section-container .basic-main-container #particles-js .basic-main-info {
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .right-part-section-container .basic-main-container #particles-js .basic-main-info img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
   border-radius: 100%;
-  border: 8px solid rgba(255, 255, 255, 0.5);
-}
-
-.right-part-section-container .basic-main-container #particles-js .basic-main-info h3 {
-  text-transform: uppercase;
-  font-family: Montserrat;
-  font-size: 50px;
-  font-weight: 300;
-  margin: 25px 0px;
-}
-
-.right-part-section-container .basic-main-container #particles-js .basic-main-info h3 span {
-  color: #E3872D;
-}
-
-.right-part-section-container .basic-main-container #particles-js .basic-main-info p {
-  font-size: 20px;
-  margin-top: 0px;
 }
 
 .right-part-section-container .about-me-section .about-me-container {
@@ -713,7 +654,7 @@ body {
 }
 
 .right-part-section-container .about-me-section .about-me-container .about-header {
-  padding-left: 25px;
+  padding-left: 20px;
   color: black;
   margin-bottom: 100px;
   border-left: 3px solid orange;
@@ -721,12 +662,7 @@ body {
 }
 
 .right-part-section-container .about-me-section .about-me-container .about-header h3 {
-  font-size: 50px;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: -.5px;
-  line-height: 1;
-  margin: 0px;
 }
 
 .right-part-section-container .about-me-section .about-me-container .foto-frame-and-info {
@@ -765,26 +701,14 @@ body {
           flex-direction: column;
 }
 
-.right-part-section-container .about-me-section .about-me-container .foto-frame-and-info .and-info h4 {
-  font-family: 'Montserrat,sans serif';
-  text-transform: none;
-  line-height: 1;
-  margin-bottom: 18px;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: -.5px;
-  line-height: 1;
-  margin: 0px;
+.right-part-section-container .about-me-section .about-me-container .foto-frame-and-info .and-info h3 {
+  margin-top: 0px;
+  color: black;
 }
 
 .right-part-section-container .about-me-section .about-me-container .foto-frame-and-info .and-info p {
-  line-height: 1.8;
-}
-
-.right-part-section-container .about-me-section .about-me-container .foto-frame-and-info .and-info p span {
-  color: #E3872D;
-  font-weight: 700;
+  font-family: Montserrat;
+  font-size: 12px;
 }
 
 .right-part-section-container .about-me-section .about-me-container .foto-frame-and-info .and-info .and-info-list {
@@ -885,10 +809,9 @@ body {
 }
 
 .right-part-section-container .some-abilities-section .abilities-container .abilities-right-part ul li {
-  padding-bottom: 3px;
-  margin-bottom: 20px;
+  width: 600px;
   width: 100%;
-  border-bottom: 3px solid grey;
+  border-bottom: 3px solid black;
 }
 
 .right-part-section-container .amazing-services-section {
@@ -917,12 +840,8 @@ body {
 }
 
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-header h3 {
-  font-size: 50px;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: -.5px;
-  line-height: 1;
-  margin: 0px;
+  color: black;
 }
 
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes {
@@ -932,19 +851,16 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: black;
-  padding: 40px 40px 33px 0px;
-}
-
-.right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .icon .svg {
-  width: 20%;
-  color: #E3872D;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 40px 33px 40px;
 }
 
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .photography {
   width: calc(100%/3);
   height: 33%;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
   top: 0px;
   -webkit-transition: all .3s ease;
@@ -954,8 +870,8 @@ body {
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .web-design {
   width: calc(100%/3);
   height: calc(width);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
   top: 0px;
   -webkit-transition: all .3s ease;
@@ -965,8 +881,8 @@ body {
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .branding {
   width: calc(100%/3);
   height: calc(width);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
   top: 0px;
   -webkit-transition: all .3s ease;
@@ -976,8 +892,8 @@ body {
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .social-media {
   width: calc(100%/3);
   height: calc(width);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
   top: 0px;
   -webkit-transition: all .3s ease;
@@ -987,8 +903,8 @@ body {
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .illustrator {
   width: calc(100%/3);
   height: calc(width);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
   top: 0px;
   -webkit-transition: all .3s ease;
@@ -998,8 +914,8 @@ body {
 .right-part-section-container .amazing-services-section .amazing-services-container .amazing-boxes .marketing {
   width: calc(100%/3);
   height: calc(width);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
   top: 0px;
   -webkit-transition: all .3s ease;
@@ -1038,12 +954,8 @@ body {
 }
 
 .right-part-section-container .creative-works-section .creative-works-container .creative-works-header h3 {
-  font-size: 50px;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: -.5px;
-  line-height: 1;
-  margin: 0px;
+  color: black;
 }
 
 .right-part-section-container .creative-works-section .creative-works-container .creative-works-filter-list ul {
@@ -1063,8 +975,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0px;
-  padding-right: 120px;
+  padding: 0px 120px;
   border: 1px solid black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1081,16 +992,14 @@ body {
           justify-content: center;
 }
 
-.right-part-section-container .creative-works-section .creative-works-container .creative-works-gallery .gallery-zoom li .animation a {
-  width: 33%;
-}
-
 .right-part-section-container .creative-works-section .creative-works-container .creative-works-gallery .gallery-zoom li .animation a img {
   width: 100%;
-  height: 100%;
-  background-image: url(.//assets/img/portfolio/1.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
   border: 2px solid white;
-  background-size: cover;
 }
 
 .right-part-section-container .antonio-baraley-section {
@@ -1145,12 +1054,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 25px 0;
-}
-
-.right-part-section-container .counter p {
-  font-size: 40px;
-  font-weight: 700;
 }
 
 .right-part-section-container .counter .box1 {
@@ -1193,12 +1096,7 @@ body {
 }
 
 .right-part-section-container .latest-news-section .latest-news-section-container .header h3 {
-  font-size: 50px;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: -.5px;
-  line-height: 1;
-  margin: 0px;
 }
 
 .right-part-section-container .latest-news-section .latest-news-section-container .boxes {
@@ -1295,21 +1193,18 @@ body {
   padding: 100px;
 }
 
-.right-part-section-container .contact-me-section .contact-me-container .contact-me-header {
-  margin-bottom: 100px;
-  color: black;
-  padding-left: 25px;
-  margin-bottom: 93px;
-  border-left: 3px solid orange;
-}
-
-.right-part-section-container .contact-me-section .contact-me-container .contact-me-header h3 {
-  font-size: 50px;
+.right-part-section-container .contact-me-section .contact-me-container .hdr {
+  font-size: 40px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: -.5px;
+  padding-left: 25px;
   line-height: 1;
-  margin: 0px;
+  font-family: "Montserrat";
+  margin-bottom: 100px;
+  color: black;
+  padding-left: 25px;
+  border-left: 3px solid orange;
 }
 
 .right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container {
@@ -1323,32 +1218,12 @@ body {
   width: 40%;
 }
 
-.right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container .left-get-intouch h4 {
-  font-weight: 500;
-  font-size: 24px;
-  margin-top: 0px;
-}
-
 .right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container .left-get-intouch ul {
-  font-family: "Open Sans";
-  font-size: 14px;
-  line-height: 1.8;
-  letter-spacing: 0.5px;
-  word-wrap: break-word;
-  font-weight: 400;
   padding-left: 0;
   list-style: none;
 }
 
-.right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container .left-get-intouch ul li {
-  margin-bottom: 15px;
-}
-
-.right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container .left-get-intouch ul li label {
-  font-weight: 800;
-}
-
-.right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container .left-get-intouch ul li a {
+.right-part-section-container .contact-me-section .contact-me-container .get-in-touch-container .left-get-intouch ul a {
   color: black;
   text-decoration: none;
 }
@@ -1388,4 +1263,4 @@ body {
   width: 100%;
   margin-bottom: 20px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style1.css.map */
